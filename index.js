@@ -4,7 +4,7 @@ const app = express();
 const bodyParser= require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 const port = process.env.PORT || 3000
-
+require('dotenv').config();
 //----Express
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static(__dirname + '/public'))
@@ -16,7 +16,6 @@ app.get('/', (req, res) => {
   res.render('index')
   
 })
-console.log(process.env.CONNECTION_URL)
 
 MongoClient.connect(process.env.CONNECTION_URL, { useUnifiedTopology: true })
   .then(client => {
