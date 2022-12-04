@@ -16,9 +16,9 @@ app.get('/', (req, res) => {
   res.render('index')
   
 })
+console.log(process.env.CONNECTION_URL)
 
-
-MongoClient.connect('mongodb+srv://FreeUser:freeqwerty@cluster0.zvq5w.mongodb.net/test', { useUnifiedTopology: true })
+MongoClient.connect(process.env.CONNECTION_URL, { useUnifiedTopology: true })
   .then(client => {
     console.log('Connected to Database')
     //--------------------------OMEGA--------------------------
