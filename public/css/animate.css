@@ -1,0 +1,49 @@
+.efecto__tada {
+    display: inline-block;
+    animation: tada; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+.efecto__flash{
+    animation: flash; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3.2s; /* don't forget to set a duration! */
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+.efecto__left {
+    animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3.2s; /* don't forget to set a duration! */
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+}
+
+.efecto__right{
+    animation: backInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3.2s; /* don't forget to set a duration! */
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+}
+
+.efecto__bounceInUp {
+    animation: bounceInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3.2s; /* don't forget to set a duration! */
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+.efecto__pulse {
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3.2s; /* don't forget to set a duration! */
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+.efecto__slideInDown {
+    animation: slideInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
